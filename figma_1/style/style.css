@@ -11,7 +11,8 @@ body {
 .header {
     height: 100px;
     font-size: large;
-    margin-left: 60px;  
+    margin-left: 60px;
+    font-family:'Poppins', sans-serif;  
 }
 .ellipse1 {
     left: 40px;
@@ -27,14 +28,13 @@ body {
     display: flex;
     
 }
-.flex_header_icon h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+.flex_header_icon h3 {
+    font-size: 30px;
     Line-height: 100%;
     color: #fff;
     width: 120px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 24px;
     
 }
 .flex_header_tag {
@@ -48,11 +48,11 @@ body {
     text-decoration: none;
     padding: 10px 10px;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-size: 20px; 
     max-height: 50px;
     flex-shrink: 0;
-    margin: 0 20px;
+    margin: 0px 20px;
+    line-height: 27px;
    
 
 }
@@ -79,6 +79,7 @@ body {
     justify-content: center;
     font-size: x-large;
     margin-right: 100px;
+    font-family:'Poppins', sans-serif;
 }
 .flex_content_text {
     margin: 210px 0 0 80px;
@@ -87,16 +88,16 @@ body {
 .flex_content_text h2 {
     color: #fff;
     text-align: center;
-    width: 490px;
+    width: 600px;
     margin-left: 340px;
+    font-size: 42px;
 }
 .flex_content_text p {
     color: #fff;
     font-size: 30px;
     line-height: 45px;
     margin-top: 60px;
-    margin-left: 380px;
-    text-align: left;
+    margin-left: 353px;
 }
 .flex_content_text a {
     text-decoration: none;
@@ -112,12 +113,12 @@ body {
     line-height: 80px;
     display: flex;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 335px;
 }
 .flex_content_image {
     position: absolute;
-    right: -230px;
-    top: 10px;
+    right: -257px;
+    top: 36px;
 }
 h2 {
     display: inline-block;
@@ -128,6 +129,7 @@ h2 {
     background-repeat: no-repeat;
     transition: all 0.3s linear;
   }
+  /* Sukuriamas hover efektas */
 div h2:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 83px;
@@ -142,8 +144,32 @@ div h2:after {
     transition: all 0.3s ease 0s; 
     -webkit-transition: all 0.3s ease 0s; 
     z-index: -1;
-
   }
+  h3 {
+    display: inline-block;
+    text-decoration: none;
+    background-image:  linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background-position: 50% 100%;
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    transition: all 0.3s linear;
+  }
+  /* Sukuriamas hover efektas */
+div h3:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 83px;
+    background-size: 100% 4px;
+}
+div h3:after { 
+    content: "";
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+}
   a {
     display: inline-block;
     text-decoration: none;
